@@ -1,0 +1,40 @@
+@import "bootstrap";
+
+.title {
+  font-size: 90px;
+}
+
+.letters {
+  font-size: 30px;
+}
+
+.flexbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.item-first {
+  margin-top: 150px;
+}
+
+body {
+  background-color: #204B93;
+}
+
+.button {
+  width: 250px;
+  height: 50px;
+  background-color: white;
+}
+
+.button:hover {
+  background-color: #f0f0f0;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+a {
+  color: #204B93 !important;
+}

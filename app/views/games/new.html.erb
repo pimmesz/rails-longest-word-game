@@ -1,9 +1,19 @@
-<h1>New game</h1>
-<p> <%= @letters.split("")  %> </p>
 
-<form action="/score" method="post">
-  <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
-  <input type="text" name="word" placeholder="Word">
-  <input type="hidden" name="randomword" value=<%= @letters  %>>
-  <input type="submit">
-</form>
+<div class="flexbox">
+  <div class="item-first">
+    <h1 class="title text-light">New game</h1>
+  </div>
+  <div class="item">
+    <p class="letters text-light"> <%= @letters.split("").join(" ")  %> </p>
+  </div>
+  <div class="item">
+   <form action="/score" method="post">
+    <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+    <input type="text" name="word" placeholder="Word" class="text-center">
+    <input type="hidden" name="randomword" value=<%= @letters  %>>
+    <input type="submit">
+  </form>
+</div>
+</div>
+
+

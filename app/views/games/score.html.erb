@@ -1,3 +1,13 @@
-<h1>Result</h1>
-<p> <%= @result  %></p>
-<%= link_to "Play again", new_path %>
+<div class="flexbox">
+  <div class="item-first">
+    <h1 class="title text-light">Results</h1>
+  </div>
+  <div class="item">
+    <p class="letters text-light"> <%= @result  %> </p>
+  </div>
+  <div>
+   <%= link_to "Play again", new_path, :class => 'item button flexbox' %>
+</div>
+</div>
+
+
