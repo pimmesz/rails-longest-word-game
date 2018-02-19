@@ -1,0 +1,9 @@
+<h1>New game</h1>
+<p> <%= @letters.split("")  %> </p>
+
+<form action="/score" method="post">
+  <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+  <input type="text" name="word" placeholder="Word">
+  <input type="hidden" name="randomword" value=<%= @letters  %>>
+  <input type="submit">
+</form>
